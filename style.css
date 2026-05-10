@@ -1,4 +1,39 @@
-h1 {
-  text-align: center;
-  color: brown;
+body {
+  background: rgb(254, 227, 231);
+  margin: 0; /* Removes default browser spacing */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.to-claim {
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white; /* Added 'solid' so the border shows */
+}
+
+.to-disappear {
+  background-color: rgb(99, 1, 1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#flowerImage {
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 200px; /* Optional: keeps image size consistent */
+  margin-bottom: 20px; /* Space between flower and button */
+}
+
+#flowerImage.to-show {
+  opacity: 1;
 }
